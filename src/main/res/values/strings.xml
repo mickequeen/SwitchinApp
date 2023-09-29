@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Switchin</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="olvidaste_tu_contrase_a">¿Olvidaste tu contraseña?</string>
+    <string name="reg_strate">Regístrate</string>
+    <string name="iniciar_sesi_n">Iniciar sesión</string>
+    <string name="forma_parte_de_la_comunidad_de_coleccionistas_de_nintendo_switch">Forma parte de la comunidad de coleccionistas de Nintendo Switch</string>
+    <string name="mi_colecci_n">Mi colección</string>
+    <string name="btnnuevojuego">btnNuevoJuego</string>
+    <string name="btnagregarimg">btnAgregarImg</string>
+    <string-array name="sp_category">
+        <item>Seleccione Tipo de colección</item>
+        <item>Pública</item>
+        <item>Privada</item>
+        <item>Colaborativa</item>
+    </string-array>
+    <string-array name="sp_estado">
+        <item>Selecciona estado del Item </item>
+        <item>Nuevo</item>
+        <item>Sellado</item>
+        <item>Usado</item>
+    </string-array>
+    <string-array name="sp_tipo">
+        <item>Selecciona Tipo de Item</item>
+        <item>Cartucho</item>
+        <item>Digital</item>
+        <item>Edición especial (limitada)</item>
+        <item>Collector Edition</item>
+        <item>DLC</item>
+        <item>Cartucho + Travelers guide</item>
+        <item>SteelBox</item>
+
+    </string-array>
+    <string-array name="mis_juegos">
+        <item>Legend Of Zelda Breath of the Wild</item>
+        <item>Legend of Zelda Tears of the Kingdom</item>
+        <item>Kirby in Forgotten Land</item>
+        <item>Mario Tennis</item>
+        <item>Mario Kart 8</item>
+    </string-array>
+</resources>
