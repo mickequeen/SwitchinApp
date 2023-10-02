@@ -39,4 +39,6 @@
         <item>Mario Tennis</item>
         <item>Mario Kart 8</item>
     </string-array>
+
+    <string name="error_campo_requerido">* Este campo es requerido</string>
 </resources>

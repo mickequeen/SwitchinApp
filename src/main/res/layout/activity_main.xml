@@ -50,13 +50,13 @@
         android:layout_width="96dp"
         android:layout_height="125dp"
         android:layout_marginStart="128dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/avatar_planta" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_login"
         android:layout_width="210dp"
         android:layout_height="48dp"
         android:layout_marginStart="72dp"
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_registrar"
         android:layout_width="210dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
@@ -77,14 +77,14 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
+        android:id="@+id/nombre_usuario"
+        android:layout_width="252dp"
+        android:layout_height="75dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -92,26 +92,27 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:background="#FFFFFF"
             android:hint="@string/usuario" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout3"
-        android:layout_width="249dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="24dp"
+        android:id="@+id/clave_usuario"
+        android:layout_width="247dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/nombre_usuario">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="43dp"
+            android:layout_height="50dp"
             android:background="#FFFFFF"
-            android:hint="@string/contrase_a" />
+            android:hint="@string/contrase_a"
+            android:password="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -125,6 +126,6 @@
         android:text="@string/olvidaste_tu_contrase_a"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+        app:layout_constraintTop_toBottomOf="@+id/clave_usuario" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

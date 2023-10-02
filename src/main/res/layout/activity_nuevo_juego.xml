@@ -111,14 +111,25 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="207dp"
+        android:id="@+id/btn_agregar"
+        android:layout_width="120dp"
         android:layout_height="49dp"
         android:layout_marginTop="40dp"
         android:backgroundTint="#379236"
         android:text="Añadir"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout8" />
+
+    <Button
+        android:id="@+id/btn_cancelar"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#8F8787"
+        android:text="Cancelar"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout8" />
 

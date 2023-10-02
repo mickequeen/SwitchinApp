@@ -110,7 +110,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btn_eliminar"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
@@ -121,13 +121,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout10" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btn_actualizar"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="44dp"
         android:backgroundTint="#379236"
-        android:text="Añadir"
+        android:text="Actualizar"
         app:layout_constraintEnd_toStartOf="@+id/guideline20"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout10" />
 </androidx.constraintlayout.widget.ConstraintLayout>
