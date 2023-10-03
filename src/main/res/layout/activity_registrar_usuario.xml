@@ -12,20 +12,20 @@
         android:layout_width="210dp"
         android:layout_height="48dp"
         android:layout_marginStart="68dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#379236"
         android:text="@string/reg_strate"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintHorizontal_bias="0.027"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6" />
+        app:layout_constraintTop_toBottomOf="@+id/confirmar_clave" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="40dp" />
+        app:layout_constraintGuide_percent="0.05608755" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
@@ -61,7 +61,7 @@
         android:layout_width="325dp"
         android:layout_height="26dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:text="@string/reg_strate"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -73,85 +73,91 @@
         android:layout_width="327dp"
         android:layout_height="44dp"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="40dp"
         android:text="@string/forma_parte_de_la_comunidad_de_coleccionistas_de_nintendo_switch"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+        android:id="@+id/ingreso_usuario"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="72dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="49dp"
             android:background="#FFFFFF"
-            android:hint="Usuario" />
+            android:hint="Usuario"
+            android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout4"
+        android:id="@+id/ingreso_correo"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="72dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="3dp"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_usuario">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="49dp"
             android:background="#FFFFFF"
-            android:hint="Correo" />
+            android:hint="Correo"
+            android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Spinner
-        android:id="@+id/spinner4"
+        android:id="@+id/tipo_coleccion"
         android:layout_width="302dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:background="#FFFFFF"
         android:entries="@array/sp_category"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_correo" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout5"
+        android:id="@+id/ingreso_clave"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="72dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toBottomOf="@+id/spinner4">
+        app:layout_constraintTop_toBottomOf="@+id/tipo_coleccion">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="49dp"
             android:background="#FFFFFF"
-            android:hint="Contraseña" />
+            android:hint="Contraseña"
+            android:password="true"
+            android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout6"
+        android:id="@+id/confirmar_clave"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="72dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_clave">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="49dp"
             android:background="#FFFFFF"
-            android:hint="Confirmar contraseña" />
+            android:hint="Confirmar contraseña"
+            android:password="true"
+            android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
@@ -161,7 +167,7 @@
         android:layout_marginStart="148dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_registrarse"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/confirmar_clave"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ditto" />
 

@@ -56,34 +56,35 @@
         app:srcCompat="@drawable/botw" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout9"
+        android:id="@+id/editar_nombre_juego"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="72dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="@+id/guideline19"
         app:layout_constraintTop_toBottomOf="@+id/imageView10">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:background="#FFFFFF"
-            android:hint="The Legend of Zelda Breath of the wild" />
+            android:hint="The Legend of Zelda Breath of the wild"
+            android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Spinner
-        android:id="@+id/editarEstado"
+        android:id="@+id/editar_estado"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="#FFFFFF"
         android:entries="@array/sp_estado"
         app:layout_constraintStart_toStartOf="@+id/guideline19"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout9" />
+        app:layout_constraintTop_toBottomOf="@+id/editar_nombre_juego" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/editar_tipo"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
@@ -91,22 +92,23 @@
         android:background="#FFFFFF"
         android:entries="@array/sp_tipo"
         app:layout_constraintStart_toStartOf="@+id/guideline19"
-        app:layout_constraintTop_toBottomOf="@+id/editarEstado" />
+        app:layout_constraintTop_toBottomOf="@+id/editar_estado" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout10"
+        android:id="@+id/editar_desc"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="72dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/guideline19"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2">
+        app:layout_constraintTop_toBottomOf="@+id/editar_tipo">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:background="#FFFCFC"
-            android:hint="Descripción" />
+            android:hint="Descripción"
+            android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -118,16 +120,16 @@
         android:backgroundTint="#D21414"
         android:text="Borrar"
         app:layout_constraintStart_toStartOf="@+id/guideline19"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout10" />
+        app:layout_constraintTop_toBottomOf="@+id/editar_desc" />
 
     <Button
         android:id="@+id/btn_actualizar"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginEnd="28dp"
         android:backgroundTint="#379236"
         android:text="Actualizar"
         app:layout_constraintEnd_toStartOf="@+id/guideline20"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout10" />
+        app:layout_constraintTop_toBottomOf="@+id/editar_desc" />
 </androidx.constraintlayout.widget.ConstraintLayout>

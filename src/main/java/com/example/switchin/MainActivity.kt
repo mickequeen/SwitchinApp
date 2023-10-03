@@ -13,9 +13,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val btn_login = findViewById<Button>(R.id.btn_login)
         val btn_registro = findViewById<Button>(R.id.btn_registrar)
+
         btn_login.setOnClickListener{
             if ( validacionCampos() == 0){
                 val intent = Intent(this@MainActivity, ListadoColeccionActivity::class.java )
+                Toast.makeText( this, "bienvenido/a!" , Toast.LENGTH_SHORT).show()
                 startActivity(intent)
             }
         }
@@ -31,34 +33,27 @@ class MainActivity : AppCompatActivity() {
         var nombre_usuario = til_nombre_usuario.editText?.text.toString()
         var clave = til_clave_usu.editText?.text.toString()
         val validador = Validador()
-
         var contador = 0
-
+        // validación usuario
         if(!validador.validarNull(nombre_usuario) && validador.validarNombreUsu(nombre_usuario)){
             til_nombre_usuario.error = "Nombre de usuario inválido"
             contador++
-        } else{
-            til_nombre_usuario.error = ""
-        }
-        if (!validador.validarNull(clave) && validador.validarLargoClave(clave)){
-            til_clave_usu.error = "Largo de contraseña no válido (mínimo 6 carácteres)"
-            contador++
-        } else {
-            til_clave_usu.error = ""
-        }
-        if (validador.validarNull(nombre_usuario)) {
+        }  else if (validador.validarNull(nombre_usuario) && validador.validarNombreUsu(nombre_usuario)){
             til_nombre_usuario.error = getString(R.string.error_campo_requerido)
             contador++
-        } else {
+        } else if (!validador.validarNull(nombre_usuario) && !validador.validarNombreUsu(nombre_usuario)){
             til_nombre_usuario.error = ""
         }
-        if (validador.validarNull(clave)){
+        //validación contraseña
+        if (!validador.validarNull(clave) && validador.validarLargoClave(clave)){
+            til_clave_usu.error = "Largo de contraseña no válido"
+            contador++
+        } else if (validador.validarNull(clave) && validador.validarLargoClave(clave)) {
             til_clave_usu.error = getString(R.string.error_campo_requerido)
             contador++
         } else {
-            til_clave_usu.error = ""
+            til_nombre_usuario.error = ""
         }
-        println(contador)
         return contador
     }
 

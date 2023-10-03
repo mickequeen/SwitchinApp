@@ -22,4 +22,7 @@ class Validador {
     fun validarLargoClave(clave: String): Boolean {
         return clave.length < 5
     }
+    fun validarLargo(desc: String, largo: Int): Boolean {
+        return desc.length < largo
+    }
 }

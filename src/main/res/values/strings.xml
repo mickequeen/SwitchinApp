@@ -16,7 +16,7 @@
         <item>Colaborativa</item>
     </string-array>
     <string-array name="sp_estado">
-        <item>Selecciona estado del Item </item>
+        <item>Selecciona estado del Item</item>
         <item>Nuevo</item>
         <item>Sellado</item>
         <item>Usado</item>
@@ -41,4 +41,10 @@
     </string-array>
 
     <string name="error_campo_requerido">* Este campo es requerido</string>
+    <string name="clave_igual">Las contraseñas deben ser iguales</string>
+    <string name="largo_clave">Largo de contraseña no válido</string>
+    <string name="usu_nok">Nombre de usuario no válido</string>
+    <string name="formato_correo">Formato de correo inválido. ej: hola@switchin.cl</string>
+    <string name="largo_nombre_juego">Longitud de nombre no válida</string>
+    <string name="largo_descrip">Descripción mínima 15 carácteres</string>
 </resources>
